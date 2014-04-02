@@ -1,0 +1,54 @@
+/**
+ * Colors
+ */
+$col-01: #4BA798;
+$input-bg: rgb(65, 65, 65);
+
+/**
+ * Styles
+ */
+
+.graph01 {
+
+  /**
+   * forms elements
+   */
+
+  input[type="text"] {
+    border: none;
+    background-color: $input-bg;
+    color: #FFF;
+    height: $baseline*1.5;
+    width: $baseline*4;
+    margin-bottom: $baseline/4;
+  }
+
+  label {
+    color: white;
+    font-weight: 200;
+  }
+
+  button {
+    height: $baseline * 1.5;
+    background-color: $col-01;
+    vertical-align: top;
+    border: none;
+    color: #FFF;
+    font-weight: 200;
+  }
+}
+
+
+/**
+ * svg
+ */
+
+.chart rect {
+  fill: $col-01;
+}
+
+.chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}

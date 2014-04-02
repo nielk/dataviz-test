@@ -1,0 +1,83 @@
+$col: rgb(240, 39, 152);
+$col-btn: #A03A73;
+$line-col: rgb(65, 64, 63);
+
+.graph02 {
+  path {
+      stroke: $col;
+      stroke-width: 1;
+      fill: none;
+  }
+
+  path.line02 {
+    stroke: #F0B827;
+  }
+
+  path.line03 {
+    stroke: #4ba798;
+  }
+
+  .axis {
+    shape-rendering: crispEdges;
+  }
+
+  .x.axis line {
+    stroke: $line-col;
+  }
+
+  .x.axis .minor {
+    stroke-opacity: .5;
+  }
+
+  .x.axis path {
+    display: none;
+  }
+
+  .y.axis line, .y.axis path {
+    fill: none;
+    stroke: $line-col;
+  }
+
+  .y.axis text,
+  .x.axis text {
+    fill: #999;
+  }
+
+  button {
+    height: $baseline * 1.5;
+    background-color: $col-btn;
+    vertical-align: top;
+    border: none;
+    color: #FFF;
+    font-weight: 200;
+  }
+
+  input[type="text"] {
+    border: none;
+    background-color: $input-bg;
+    color: #FFF;
+    height: $baseline*1.5;
+    width: $baseline*4;
+    margin-bottom: $baseline/4;
+  }
+
+  label {
+    color: white;
+    font-weight: 200;
+  }
+
+  input[type='range'] {
+    -webkit-appearance: none !important;
+    background:$input-bg;
+    height:1px;
+    outline: none;
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: #ddd;
+    height:10px;
+    width:10px;
+    border-radius: 10px;
+  }
+}

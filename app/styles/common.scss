@@ -1,0 +1,17 @@
+/**
+ * Typo
+ */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+body {
+    font-family: 'Open Sans', arial;
+    letter-spacing: 2px;
+    font-weight: 300;
+    background-color: $body-bg;
+    color: $body-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', arial;
+    font-weight: 600;
+}

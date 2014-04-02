@@ -1,0 +1,13 @@
+<article class="graph02">
+    <h2>Another charts</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt.<p>
+    <div id="graph" class="aGraph"></div>
+    <div ng-repeat="item in dataGraph02 track by $index" class="clearfix">
+    <label>bar {{$index}}: </label>
+    <input type="range"  min="0" max="10" ng-model="dataGraph02[$index]"/>
+    </div>
+    <label>Add a point: </label>
+    <input type="text" ng-model="newItemGraph02">
+    <button ng-click="addDataGraph02(newItemGraph02)">Add</button>
+</article>
